@@ -19,8 +19,10 @@ public class HomePage extends BasePage {
 
     public void verifyUserPageTitle(String subTitle) {
         if (subTitle.equals("Dashboard") || subTitle.equals("Quick Launchpad")) {
+            waitUntilLoaderScreenDisappear();
             Assert.assertEquals("Subtitles are not match!", pageSubtitle.getText(), subTitle);
         } else {
+            waitUntilLoaderScreenDisappear();
             Assert.assertEquals("Subtitles are not match!", loginPage.forgotPasswordHeader.getText(), subTitle);
         }
     }

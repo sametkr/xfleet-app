@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         glue = "com/xfleet/step_definitions",
         publish = true,
         dryRun = false,
-        tags = ""
+        tags = "@FLTAPS-1831"
 )
 public class Runner {
 }
